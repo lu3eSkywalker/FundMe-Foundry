@@ -1,0 +1,35 @@
+# Ignore build artifacts
+out/
+lib/
+
+# Ignore cache files
+.cache/
+foundry.toml.lock
+
+# Ignore test and coverage artifacts
+*.coverage
+*.gas-snapshot
+
+# Ignore DS-Tests coverage files (if using)
+coverage/
+
+# Ignore temporary files created by editors or the system
+*.log
+*.swp
+*.swo
+*~
+
+# Ignore node_modules if you have a frontend setup with node.js
+node_modules/
+
+# Ignore environment files
+.env
+.env.local
+.env.test
+
+# Ignore any compiled JS/TS files if you're using them
+dist/
+build/
+
+# Ignore Forge downloads (solc, etc.)
+forge_bin/

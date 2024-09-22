@@ -1,0 +1,23 @@
+
+Commands for FundMe
+
+//This contract addresses are foundry test address
+
+To Fund amount
+cast send 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 "fund()" --value 1ether --rpc-url $RPC_URL --private-key $PRIVATE_KEY
+
+
+To Query How much a particular address has sent the ETH (getAddressToAmountFunded())
+cast call 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 "getAddressToAmountFunded(address)" "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266" --rpc-url $RPC_URL
+
+
+To get the owner of the contract (getOwner())
+cast call 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 "getOwner()" --rpc-url $RPC_URL
+
+
+To get Funder by indexes
+cast call 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 "getFunder(uint256)" 4 --rpc-url $RPC_URL
+
+
+To Withdraw the amount
+cast send 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 "withdraw()" --rpc-url $RPC_URL --private-key $PRIVATE_KEY
