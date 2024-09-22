@@ -30,7 +30,7 @@ const SendEth = () => {
   return (
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="bg-white shadow-md rounded-lg p-8 w-80">
-                <h1 className="text-2xl font-bold mb-6 text-center">Save Info on Blockchain</h1>
+                <h1 className="text-2xl font-bold mb-6 text-center">Send ETH to the Smart Contract</h1>
                 
                 <input
                     type='number'
@@ -48,7 +48,7 @@ const SendEth = () => {
                 </div>
 
                 <button 
-                    className="mt-6 w-full bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 transition"
+                    className="mt-1 w-full bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 transition"
                     onClick={() => sendEthToContract()}
                 >
                     Send Eth
